@@ -1,0 +1,54 @@
+*{
+  direction: rtl;
+  font-family: Regular;
+}
+
+
+@font-face {
+  font-family: Black;
+  src: url("./assets/font/IranSansX/Farsi/Black.ttf");
+}
+
+@font-face {
+  font-family: Bold;
+  src: url("./assets/font/IranSansX/Farsi/DemiBold.ttf");
+}
+
+@font-face {
+  font-family: DemiBold;
+  src: url("./assets/font/IranSansX/Farsi/DemiBold.ttf");
+}
+
+@font-face {
+  font-family: ExtraBold;
+  src: url("./assets/font/IranSansX/Farsi/ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Light;
+  src: url("./assets/font/IranSansX/Farsi/Light.ttf");
+}
+
+@font-face {
+  font-family: Medium;
+  src: url("./assets/font/IranSansX/Farsi/Medium.ttf");
+}
+
+@font-face {
+  font-family: Regular;
+  src: url("./assets/font/IranSansX/Farsi/Regular.ttf");
+}
+
+@font-face {
+  font-family: Thin;
+  src: url("./assets/font/IranSansX/Farsi/Thin.ttf");
+}
+
+@font-face {
+  font-family: UltraLight;
+  src: url("./assets/font/IranSansX/Farsi/UltraLight.ttf");
+}
+
+.Toastify *{
+  font-size: 13px;
+}

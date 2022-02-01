@@ -1,0 +1,320 @@
+.signup {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  font-family: numeralLight;
+  &__back{
+    img{
+      width: 40px;
+    }
+  }
+  &-light {
+    b {
+      color: $gray5 !important;
+    }
+    input {
+      background-color: white;
+      border: 1px solid $green1;
+      color: $gray5;
+      &::placeholder {
+        color: $gray9;
+      }
+      &:focus {
+        border: 1px solid $green4;
+        &::placeholder {
+          color: $green4;
+        }
+      }
+    }
+    .signup {
+      &__info {
+        color: $gray5;
+        a {
+          color: $green4;
+        }
+      }
+      &__back {
+        a {
+          color: $gray5;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  &-dark {
+    input {
+      background-color: $gray8;
+      border: 1px solid $gray;
+      color: white;
+      &:focus {
+        border: 1px solid $green4;
+        &::placeholder {
+          color: $green4;
+        }
+      }
+    }
+    .signup {
+      &__info {
+        color: white;
+        a {
+          color: $green4;
+        }
+      }
+      &__back {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  img {
+    // transform: rotate(-90deg);
+  }
+  .footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+  }
+  button[type="submit"] {
+    margin-top: 25px;
+    background-color: $green4;
+    color: white;
+    padding: 10px 0px;
+    border: 0px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .signup {
+    section {
+      width: 410px;
+      b {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        line-height: 1.7;
+        p {
+        }
+      }
+      input {
+        text-align: center;
+        border-radius: 8px;
+        font-size: 20px;
+        padding: 8px 0px;
+        direction: ltr;
+        &:focus {
+          &::placeholder {
+            opacity: 0.3;
+          }
+        }
+      }
+      button {
+        margin-top: 25px;
+        font-size: 17px;
+      }
+    }
+    &__info {
+      width: 350px;
+      margin: 30px auto 0px;
+      text-align: center;
+      font-size: 13px;
+    }
+    &__back {
+      margin-bottom: 60px;
+      a {
+        font-size: 13px;
+      }
+      .desktop {
+        img {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+    &__error {
+      margin-top: 10px;
+      color: $red1;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1440px) {
+  .signup {
+    section {
+      width: 350px;
+      b {
+        color: white;
+        font-size: calc(100vw / 90);
+        margin-bottom: 30px;
+        font-weight: 500;
+        p {
+          // font-size: calc(100vw / 140) !important;
+        }
+      }
+      input {
+        text-align: center;
+        border-radius: 8px;
+        font-size: calc(100vw / 75);
+        padding: 8px 0px;
+        direction: ltr;
+        &:focus {
+          &::placeholder {
+            opacity: 0.3;
+          }
+        }
+      }
+      button {
+        margin-top: 25px;
+        font-size: calc(100vw / 80);
+      }
+    }
+    &__info {
+      width: 300px;
+      margin: 20px auto 0px;
+      text-align: center;
+      font-size: calc(100vw / 110);
+    }
+    &__back {
+      margin-bottom: 50px;
+      a {
+        font-size: calc(100vw / 110);
+      }
+      .desktop {
+        img {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+    &__error {
+      margin-top: 10px;
+      color: $red1;
+      font-size: calc(100vw / 110);
+    }
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .signup {
+    .footer {
+      display: none !important;
+    }
+    section {
+      width: 90%;
+      max-width: 700px;
+      height: calc(100% - 60px);
+      justify-content: center;
+      b {
+        color: white;
+        font-size: calc(100vw / 35);
+        margin-bottom: 70px;
+        font-weight: 500;
+        p {
+          // font-size: calc(100vw / 30) !important;
+        }
+      }
+      input {
+        text-align: center;
+        border-radius: 8px;
+        font-size: calc(100vw / 30);
+        padding: 10px 14px;
+        direction: ltr;
+        &:focus {
+          &::placeholder {
+            opacity: 0.3;
+          }
+        }
+      }
+      button {
+        font-size: calc(100vw / 30);
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto 0px;
+      }
+    }
+    &__info {
+      width: 400px;
+      margin: 20px auto 0px;
+      text-align: center;
+      font-size: calc(100vw / 40);
+    }
+    &__back {
+      position: fixed;
+      top: 100px;
+      left: 30px;
+      margin-bottom: 50px;
+      a {
+        font-size: calc(100vw / 110);
+      }
+      img {
+        width: 50px;
+      }
+    }
+    &__error {
+      margin-top: 10px;
+      color: $red1;
+      font-size: calc(100vw / 110);
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .signup {
+    section {
+      width: 90%;
+      max-width: 400px;
+      height: calc(100% - 60px);
+      justify-content: center;
+      b {
+        color: white;
+        font-size: calc(100vw / 25);
+        margin-bottom: 30px;
+        font-weight: 500;
+        p {
+          // font-size: calc(100vw / 30) !important;
+        }
+      }
+      input {
+        text-align: center;
+        border-radius: 8px;
+        font-size: calc(100vw / 22);
+        padding: 10px 14px;
+        direction: ltr;
+        &:focus {
+          &::placeholder {
+            opacity: 0.3;
+          }
+        }
+      }
+      button {
+        margin-top: 20px;
+        font-size: calc(100vw / 24);
+        padding: 12px 0px;
+        border: 0px;
+        border-radius: 10px;
+      }
+    }
+    &__info {
+      width: 300px;
+      margin: 30px auto 0px;
+      text-align: center;
+      font-size: calc(100vw / 30);
+      line-height: 1.5;
+    }
+    &__back {
+      position: fixed;
+      top: 70px;
+      left: 20px;
+      margin-bottom: 50px;
+      a {
+        font-size: calc(100vw / 110);
+      }
+    }
+    &__error {
+      margin-top: 10px;
+      color: $red1;
+      font-size: calc(100vw / 30);
+    }
+  }
+}
